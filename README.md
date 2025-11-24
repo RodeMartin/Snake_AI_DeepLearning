@@ -8,7 +8,7 @@
 
 Egy fejlett, önvezető Snake cselekvő, amely **Deep Q-Learning (DQN)** segítségével tanul meg játszani a nulláról. A projekt nemcsak a mesterséges intelligenciát demonstrálja, hanem egy teljesen egyedi játékmotort is tartalmaz részecske-effektekkel, dinamikus akadályokkal és valós idejű analitikával.
 
-![Demo](/progress/demo.png)
+![Demo](/progress/demo.gif)
 
 # 📋 Tartalomjegyzék
 1. [Működés és Elmélet](#-hogyan-működik-az-elmélet)
