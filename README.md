@@ -13,10 +13,10 @@ Egy fejlett, önvezető Snake cselekvő, amely **Deep Q-Learning (DQN)** segíts
 # 📋 Tartalomjegyzék
 1. [Működés és Elmélet](#-hogyan-működik-az-elmélet)
 2. [Funkciók](#-kiemelt-funkciók-features)
-3. [Hardverkövetelmények](#[hardverkövetelmények](https://github.com/RodeMartin/Snake_AI_DeepLearning?tab=readme-ov-file#%EF%B8%8F-hardver-k%C3%B6vetelm%C3%A9nyek))
+3. [Hardverkövetelmények](#-Hardver-Követelmények)
 4. [Projekt Szerkezete](#-projekt-szerkezete)
 5. [Telepítés](#-telepítés-és-futtatás)
-6. [Jövőbeli Tervek](#j[övőbeli-fejlesztési-tervek-roadmap](https://github.com/RodeMartin/Snake_AI_DeepLearning?tab=readme-ov-file#%EF%B8%8F-j%C3%B6v%C5%91beli-fejleszt%C3%A9si-tervek-roadmap))
+6. [Jövőbeli Tervek](#jövőbeli-fejlesztési-tervek-roadmap)
 
 # 🧠 Hogyan működik? (Az elmélet) #
 
