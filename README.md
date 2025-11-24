@@ -1,6 +1,6 @@
 # 🐍 Snake AI - Deep Reinforcement Learning #
-**Beadandó feladat - Mesterséges Intelligencia és Neurális Hálózatok**
-**Oktató: Gégény Dávid**
+# Beadandó feladat - Mesterséges Intelligencia és Neurális Hálózatok #
+# Oktató: Gégény Dávid #
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red?style=for-the-badge&logo=pytorch)
@@ -13,10 +13,10 @@ Egy fejlett, önvezető Snake cselekvő, amely **Deep Q-Learning (DQN)** segíts
 # 📋 Tartalomjegyzék
 1. [Működés és Elmélet](#-hogyan-működik-az-elmélet)
 2. [Funkciók](#-kiemelt-funkciók-features)
-3. [Hardverkövetelmények](#-Hardver-Követelmények)
+3. [Hardverkövetelmények](#-hardverkövetelmények)
 4. [Projekt Szerkezete](#-projekt-szerkezete)
 5. [Telepítés](#-telepítés-és-futtatás)
-6. [Jövőbeli Tervek](#jövőbeli-fejlesztési-tervek-roadmap)
+6. [Jövőbeli Tervek](#-jövőbeli-fejlesztési-tervek-roadmap)
 
 # 🧠 Hogyan működik? (Az elmélet) #
 
