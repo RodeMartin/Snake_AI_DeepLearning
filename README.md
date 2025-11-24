@@ -13,9 +13,9 @@ Egy fejlett, önvezető Snake cselekvő, amely **Deep Q-Learning (DQN)** segíts
 # 📋 Tartalomjegyzék
 1. [Működés és Elmélet](#-hogyan-működik-az-elmélet)
 2. [Funkciók](#-kiemelt-funkciók-features)
-3. [Projekt Szerkezete](#-projekt-szerkezete)
-4. [Telepítés](#-telepítés-és-futtatás)
-5. [Hardverkövetelmények](#-hardverkövetelmények)
+3. [Hardverkövetelmények](#-hardver-követelmények)
+4. [Projekt Szerkezete](#-projekt-szerkezete)
+5. [Telepítés](#-telepítés-és-futtatás)
 6. [Jövőbeli Tervek](#-jövőbeli-fejlesztési-tervek-roadmap)
 
 # 🧠 Hogyan működik? (Az elmélet) #
@@ -94,8 +94,21 @@ A menüben válaszd a [T]-t a tanításhoz, vagy a [P]-t a lejátszáshoz.
 📈 Teljesítmény
 Az ágens általában **40-50 játék** után hagyja el a véletlenszerű mozgást. A 80. játék környékén már stabilan kerüli a bombákat és stratégiát alkalmaz.
 
-**Tokaj-Hegyalja Egyetem**
-**PTI**
-**Ródé Martin**
-**DRPPXL**
+# 🛣️ Jövőbeli Fejlesztési Tervek (Roadmap)
+
+Bár a projekt jelenlegi formájában teljes, a következő fejlesztésekkel lehetne tovább növelni a hatékonyságot:
+
+- [ ] **CNN (Convolutional Neural Network) bevezetése:** A jelenlegi 11 szenzor helyett a teljes képernyő-kép elemzése, hogy az AI "lásson", ne csak érzékeljen.
+- [ ] **Hamiltonian Cycle:** Egy tökéletes, verhetetlen algoritmus implementálása összehasonlítási alapnak.
+- [ ] **Többügynökös Rendszer (Multi-Agent):** Két kígyó versenyeztetése ugyanazon a pályán egymás ellen.
+- [ ] **Online Ranglista:** A `stats.csv` felhőbe szinkronizálása.
+
+# 👤 Szerző
+**[Ródé Martin]**
+* Egyetemi hallgató - [Tokaj-Hegyalja Egyetem - PTI]
+* Neptun-kód: **DRPPXL**
+* GitHub: [@RodeMartin](https://github.com/RodeMartin)
+
+# 📄 Licenc
+Ez a projekt az **MIT License** alatt áll - szabadon felhasználható és módosítható oktatási célokra.
                                                                                                                                                                                                                                                          **2025.11.24.**
