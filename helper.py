@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+
+plt.ion()
+
+def plot(scores, mean_scores):
+    plt.clf()
+    plt.title('Tanulas folyamata...')
+    plt.xlabel('Jatekok szama')
+    plt.ylabel('Pont')
+    plt.plot(scores)
+    plt.plot(mean_scores)
+    plt.ylim(ymin=0)
+    
+    if len(scores) > 0:
+        plt.text(len(scores)-1, scores[-1], str(scores[-1]))
+    if len(mean_scores) > 0:
+        plt.text(len(mean_scores)-1, mean_scores[-1], str(mean_scores[-1]))
+        
+    plt.show(block=False)
+    plt.pause(0.1)
