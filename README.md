@@ -1,4 +1,6 @@
 # 🐍 Snake AI - Deep Reinforcement Learning #
+**Beadandó feladat - Mesterséges Intelligencia és Neurális Hálózatok**
+**Oktató: Gégény Dávid**
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red?style=for-the-badge&logo=pytorch)
@@ -7,6 +9,14 @@
 Egy fejlett, önvezető Snake cselekvő, amely **Deep Q-Learning (DQN)** segítségével tanul meg játszani a nulláról. A projekt nemcsak a mesterséges intelligenciát demonstrálja, hanem egy teljesen egyedi játékmotort is tartalmaz részecske-effektekkel, dinamikus akadályokkal és valós idejű analitikával.
 
 ![Demo](/progress/demo.png)
+
+# 📋 Tartalomjegyzék
+1. [Működés és Elmélet](#-hogyan-működik-az-elmélet)
+2. [Funkciók](#-kiemelt-funkciók-features)
+3. [Projekt Szerkezete](#-projekt-szerkezete)
+4. [Telepítés](#-telepítés-és-futtatás)
+5. [Hardverkövetelmények](#-hardverkövetelmények)
+6. [Jövőbeli Tervek](#-jövőbeli-fejlesztési-tervek-roadmap)
 
 # 🧠 Hogyan működik? (Az elmélet) #
 
@@ -28,27 +38,64 @@ Ahol az ágens maximalizálja a jövőbeli várható jutalmat ($r$) a jelenlegi 
     * AI állapota ("GONDOLKODIK" vs "FELFEDEZ").
 * **🧠 Smart Reward Shaping:** Heurisztikus jutalmazás (+1/-1.5 pont közeledésért/távolodásért), ami drasztikusan felgyorsítja a tanulást.
 
+# 🖥️ Hardver Követelmények
+
+A projekt optimalizálva van, hogy átlagos otthoni számítógépeken is hatékonyan fusson. Dedikált videókártya (GPU/CUDA) használata támogatott, de **nem szükséges**, mivel a neurális háló architektúrája rendkívül erőforrás-takarékos.
+
+| Komponens | Minimum | Ajánlott |
+| :--- | :--- | :--- |
+| **Processzor (CPU)** | Dual Core 2.0 GHz | Quad Core 3.0 GHz+ (Intel i5 / Ryzen 5) |
+| **Memória (RAM)** | 4 GB | 8 GB+ |
+| **Videókártya (GPU)** | Integrált grafikus kártya | NVIDIA GTX 1050 vagy újabb (Opcionális) |
+| **Tárhely** | 100 MB szabad hely | 200 MB (modelleknek és logoknak) |
+| **Rendszer** | Windows 10/11, Linux, macOS | Windows 10/11 |
+
+**Megjegyzés:** A tanítás alapértelmezetten a **CPU-t** használja. Ilyen kis modellméretnél (Bemenet: 11 -> Rejtett: 256 -> Kimenet: 3) az adatok GPU-ra mozgatásának ideje (overhead) több időt venne igénybe, mint amennyi számítási előnyt nyerne vele.
+
+# 📂 Projekt Szerkezete
+
+A kód moduláris felépítésű a könnyebb karbantarthatóság és bővíthetőség érdekében:
+
+      SnakeAI/
+      ├── agent.py           # 🧠 A FŐPROGRAM. Ez köti össze a játékot a modellel.
+      │                        (Tartalmazza a tanítási hurkot és a memóriát)
+      ├── game.py            # 🎮 JÁTÉKMOTOR. A PyGame alapú környezet.
+      │                        (Grafika, részecske-effektek, bombák logikája, HUD)
+      ├── model.py           # 🕸️ NEURÁLIS HÁLÓ. A PyTorch DQN implementációja.
+      │                        (Linear_QNet osztály és a Trainer logika)
+      ├── helper.py          # 📊 VIZUALIZÁCIÓ. Valós idejű grafikonrajzoló (Matplotlib).
+      ├── make_assets.py     # 🎨 GENERÁTOR. Script a képek és hangok legyártásához.
+      ├── requirements.txt   # 📦 FÜGGŐSÉGEK. A szükséges Python csomagok listája.
+      └── resources/         # 📁 ASSETEK. A generált .png és .wav fájlok helye.
+
 # 🚀 Telepítés és Futtatás #
 
 1. **Klónozd le a repót:**
    ```bash
-   git clone [https://github.com/RodeMartin/SnakeAI.git](https://github.com/RodeMartin/SnakeAI.git)
+   git clone [https://github.com/RodeMartin/Snake_AI_DeepLearning.git](https://github.com/RodeMartin/Snake_AI_DeepLearning.git)
    cd SnakeAI
 
 2. **Telepítsd a függőségeket:**
-
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 3. **Generáld le az asseteket:** 
 A projekt tartalmaz egy scriptet, ami programozottan legyártja a képeket és hangokat, így nem kell külső fájlokat letölteni.
-
-python make_assets.py
+ 
+   ```bash
+   python make_assets.py
 
 4. **Indítsd el az AI-t:**
-
-python agent.py
+   ```bash
+   python agent.py
 
 A menüben válaszd a [T]-t a tanításhoz, vagy a [P]-t a lejátszáshoz.
 
 📈 Teljesítmény
 Az ágens általában **40-50 játék** után hagyja el a véletlenszerű mozgást. A 80. játék környékén már stabilan kerüli a bombákat és stratégiát alkalmaz.
+
+**Tokaj-Hegyalja Egyetem**
+**PTI**
+**Ródé Martin**
+**DRPPXL**
+                                                                                                                                                                                                                                                         **2025.11.24.**
