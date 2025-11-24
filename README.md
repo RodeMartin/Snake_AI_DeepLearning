@@ -8,15 +8,15 @@
 
 Egy fejlett, önvezető Snake cselekvő, amely **Deep Q-Learning (DQN)** segítségével tanul meg játszani a nulláról. A projekt nemcsak a mesterséges intelligenciát demonstrálja, hanem egy teljesen egyedi játékmotort is tartalmaz részecske-effektekkel, dinamikus akadályokkal és valós idejű analitikával.
 
-![Demo](/progress/demo.png)
+![Demo](/progress/demo.gif)
 
 # 📋 Tartalomjegyzék
 1. [Működés és Elmélet](#-hogyan-működik-az-elmélet)
 2. [Funkciók](#-kiemelt-funkciók-features)
-3. [Hardverkövetelmények](#-hardverkövetelmények)
+3. [Hardverkövetelmények](#hardver)
 4. [Projekt Szerkezete](#-projekt-szerkezete)
 5. [Telepítés](#-telepítés-és-futtatás)
-6. [Jövőbeli Tervek](#-jövőbeli-fejlesztési-tervek-roadmap)
+6. [Jövőbeli Tervek](#tervek)
 
 # 🧠 Hogyan működik? (Az elmélet) #
 
@@ -38,7 +38,7 @@ Ahol az ágens maximalizálja a jövőbeli várható jutalmat ($r$) a jelenlegi 
     * AI állapota ("GONDOLKODIK" vs "FELFEDEZ").
 * **🧠 Smart Reward Shaping:** Heurisztikus jutalmazás (+1/-1.5 pont közeledésért/távolodásért), ami drasztikusan felgyorsítja a tanulást.
 
-# 🖥️ Hardver Követelmények
+## <a name="hardver"></a>🖥️ Hardverkövetelmények
 
 A projekt optimalizálva van, hogy átlagos otthoni számítógépeken is hatékonyan fusson. Dedikált videókártya (GPU/CUDA) használata támogatott, de **nem szükséges**, mivel a neurális háló architektúrája rendkívül erőforrás-takarékos.
 
@@ -94,7 +94,7 @@ A menüben válaszd a [T]-t a tanításhoz, vagy a [P]-t a lejátszáshoz.
 📈 Teljesítmény
 Az ágens általában **40-50 játék** után hagyja el a véletlenszerű mozgást. A 80. játék környékén már stabilan kerüli a bombákat és stratégiát alkalmaz.
 
-# 🛣️ Jövőbeli Fejlesztési Tervek (Roadmap)
+## <a name="tervek"></a>🛣️ Jövőbeli Fejlesztési Tervek (Roadmap)
 
 Bár a projekt jelenlegi formájában teljes, a következő fejlesztésekkel lehetne tovább növelni a hatékonyságot:
 
