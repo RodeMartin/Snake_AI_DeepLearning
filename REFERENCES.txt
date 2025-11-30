@@ -1,0 +1,19 @@
+https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf
+
+(DeepMind alapmuve a DQN-ről)
+
+https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf
+
+(Bellman egyenlet)
+
+https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
+
+(Reinforcement Learning tutorial)
+
+https://www.youtube.com/watch?v=PJl4iabBEz0
+
+(11 bemenetes state logika alapja oktatóanyag)
+
+https://www.pygame.org/docs/
+
+(alapok)
