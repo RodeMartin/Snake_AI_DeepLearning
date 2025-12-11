@@ -32,7 +32,7 @@ Ahol az ágens maximalizálja a jövőbeli várható jutalmat ($r$) a jelenlegi 
 # ✨ Kiemelt Funkciók (Features) #
 
 * **💣 Dinamikus Környezet:** A pályán véletlenszerűen elhelyezett **aknák/bombák** vannak. Az AI megtanulja, hogy nem csak a fal veszélyes, hanem a statikus akadályok is.
-* **✨ Particle System:** Saját fejlesztésű fizikai motor a robbanásokhoz (lila részecskék aknáknál, piros az almánál).
+* **✨ Particle System:** "Fizikai motor" a robbanásokhoz (lila részecskék aknáknál, piros az almánál).
 * **📊 Heads-Up Display (HUD):** Valós idejű adatok a képernyőn:
     * Jelenlegi "Felfedezési ráta" (Epsilon).
     * AI állapota ("GONDOLKODIK" vs "FELFEDEZ").
@@ -46,7 +46,7 @@ A projekt optimalizálva van, hogy átlagos otthoni számítógépeken is haték
 | :--- | :--- | :--- |
 | **Processzor (CPU)** | Dual Core 2.0 GHz | Quad Core 3.0 GHz+ (Intel i5 / Ryzen 5) |
 | **Memória (RAM)** | 4 GB | 8 GB+ |
-| **Videókártya (GPU)** | Integrált grafikus kártya | NVIDIA GTX 1050 vagy újabb (Opcionális) |
+| **Videókártya (GPU)** | Integrált grafikus kártya | (Opcionális) |
 | **Tárhely** | 100 MB szabad hely | 200 MB (modelleknek és logoknak) |
 | **Rendszer** | Windows 10/11, Linux, macOS | Windows 10/11 |
 
